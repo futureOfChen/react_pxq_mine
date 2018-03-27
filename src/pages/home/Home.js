@@ -6,7 +6,9 @@ import PropTypes from 'prop-types';
 import API from '../../api/api';
 import envConfig from '../../envConfig/envConfig';
 
-import { saveFormData , saveImg , clearData } from '../../store/home/action'
+import { saveFormData , saveImg , clearData } from '../../store/home/action';
+import { clearSelected } from '../../store/production/action';
+import PublicHeader from '../../components/header/Header'
 
 
 
@@ -20,6 +22,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <PublicHeader/>
                 <h1> 这是 Home 页面 </h1>
             </div>
         )

@@ -5,3 +5,9 @@ import API from '../../api/api'
 export const getProData = () => {
     
 }
+
+export const clearSelected = () =>{
+    return {
+        type:production.CLEARSELECTED,
+    }
+}
