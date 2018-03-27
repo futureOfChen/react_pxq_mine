@@ -2,7 +2,7 @@ import axios from 'axios';
 import envConfig from '../envConfig/envConfig';
 
 export default class Server {
-    axios(metho , url , params) {
+    axios(method , url , params) {
        return new Promise( (resolve ,reject) => {
            if ( typeof params !== 'object' ) params = {};
            let _option = params;
@@ -21,7 +21,7 @@ export default class Server {
            }
            axios.request(_option).then( res => {
                resolve( typeof res.data === 'object' ? res.data : JSON.parse(res.data) )
-           }, err => {
+           }, error => {
                if( error.response ) {
                    reject( error.response.data )
                }else {

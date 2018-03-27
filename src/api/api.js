@@ -1,6 +1,13 @@
 import Server from './server'
 
 class API extends Server {
+
+    /*
+    *   用来上传图片
+    *   @url
+    *   @method post
+    *   @return promise
+    */ 
     async uploadImg(params = {}) {
         try {
             let result  = await this.axios('post','http://cangdu.org:8001/v1/addimg/shop',params);
@@ -19,4 +26,5 @@ class API extends Server {
             throw err ;
         }
     }
+    
 }

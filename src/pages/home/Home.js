@@ -3,7 +3,11 @@ import React , {Component} from 'react';
 import {Link} from 'react-router-dom';
 // import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import api from '../../api/api'
+import API from '../../api/api';
+import envConfig from '../../envConfig/envConfig';
+
+import { saveFormData , saveImg , clearData } from '../../store/home/action'
+
 
 
 
