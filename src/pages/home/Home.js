@@ -22,7 +22,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <PublicHeader/>
+                <PublicHeader title='首页' record/>
                 <h1> 这是 Home 页面 </h1>
             </div>
         )
