@@ -13,7 +13,7 @@ class Header extends Component{
         }
     }
 
-    static PropTypes = {
+    static propTypes = {
         record: PropTypes.any,
         title: PropTypes.string.isRequired,
         confirm: PropTypes.any,
