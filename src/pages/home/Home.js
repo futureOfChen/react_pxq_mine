@@ -9,6 +9,8 @@ import envConfig from '../../envConfig/envConfig';
 import { saveFormData , saveImg , clearData } from '../../store/home/action';
 import { clearSelected } from '../../store/production/action';
 import PublicHeader from '../../components/header/Header'
+import './home.css';
+
 
 
 
@@ -21,10 +23,9 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
-                <PublicHeader title='首页' record/>
-                <h1> 这是 Home 页面 </h1>
-            </div>
+           <main className='home-container'>
+                <PublicHeader title='首页' record='record'/>
+            </main>
         )
     }
 }
